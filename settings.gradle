@@ -1,2 +1,3 @@
 rootProject.name = 'debugging-java-manually'
 
+include 'simple-agent'

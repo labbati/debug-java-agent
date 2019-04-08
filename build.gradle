@@ -24,5 +24,8 @@ jar {
 
 application {
     mainClassName = 'com.labbati.blog.debug.ManualDebugApp'
-    applicationDefaultJvmArgs = ['-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=6789']
+    applicationDefaultJvmArgs = [
+        '-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=6789',
+        '-javaagent:simple-agent/build/libs/simple-agent-1.0-SNAPSHOT.jar',
+    ]
 }
